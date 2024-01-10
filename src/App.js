@@ -5,6 +5,7 @@ import Header from './Header';
 import Home from './Home';
 // eslint-disable-next-line
 import {BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Checkout from './Checkout';
 
 
 function App() {
@@ -12,9 +13,10 @@ function App() {
     // BEM
     <Router>
       <div className="App">
+        <Header />
         <Routes>
-          <Route path='/' element={<><Header /><Home /></>} />
-          <Route path='/checkout' element={<><Header /><h1>I'm a checkout !!!</h1></>}/>
+          <Route path='/' element={<><Home /></>} />
+          <Route path='/checkout' element={<><Checkout /></>}/>
         </Routes>
       </div>
     </Router>
