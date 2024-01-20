@@ -2,11 +2,10 @@
     display: flex;
     margin-top: 20px;
     margin-bottom: 20px;
-
 }
 
 .checkoutProduct__info {
-    padding-left: 20px;
+    padding-left: 20px
 }
 
 .checkoutProduct__info > button {
@@ -21,13 +20,13 @@
     object-fit: contain;
     width: 180px;
     height: 180px;
-}
+  }
 
 .checkoutProduct__rating {
     display: flex;
-}
+  }
 
-.checkoutProduct__title{
+.checkoutProduct__title {
     font-size: 17px;
     font-weight: 800;
 }
