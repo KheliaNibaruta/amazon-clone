@@ -44,16 +44,45 @@ function App() {
   return (
     // BEM
     <Router>
-      <div className="App">
+      <div className="app">
         <Routes>
-          <Route path='/login' element={<Login />} />
-          <Route path='/' element={<><Header /><Home /></>} />
-          <Route path='/checkout' element={<><Header /><Checkout /></>}/>
-          <Route path='/payment' element={<Payment />} />
+          <Route 
+            path='/login' 
+            element={<Login />} 
+          />
+          <Route 
+            path='/' 
+            element={
+              <>
+                <Header />
+                <Home />
+              </>
+              } 
+          />
+          <Route 
+            path='/checkout' 
+            element={
+              <>
+                <Header />
+                <Checkout />
+              </>
+            }
+          />
+          <Route 
+            path='/payment' 
+            element={
+              <>
+                <Header />
+                <Elements stripe={promise}>
+                  <Payment />
+                </Elements>
+              </>} 
+          />
+          <Route path='/'/>
         </Routes>
       </div>
     </Router>
   );
-}
+} 
 
 export default App;
