@@ -1,7 +1,7 @@
 import React from 'react';
 import './Header.css';
 import SearchIcon from '@mui/icons-material/Search';
-import { ShoppingBasketSharp } from '@mui/icons-material';
+import { ShoppingBasketRounded, ShoppingCart } from '@mui/icons-material';
 import { Link } from 'react-router-dom';
 import { useStateValue } from './StateProvider';
 import Menya from './Menya.png';
@@ -51,7 +51,8 @@ function Header() {
 
           </div>
         </Link>
-            
+
+        <Link to='/orders'> 
           <div className='header__option'>
             
 
@@ -64,6 +65,7 @@ function Header() {
             </span>
 
           </div>
+        </Link>  
 
           <div className='header__option'>
 
@@ -79,7 +81,7 @@ function Header() {
           </div>
           <Link to='/checkout'>
             <div className='header__optionBasket'>
-              <ShoppingBasketSharp/>
+              <ShoppingCart />
               <span className='header__optionLineTwo header__basketCount'>
                 {basket?.length}
               </span>

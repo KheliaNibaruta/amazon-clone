@@ -3,7 +3,11 @@ WARNING: Illegal reflective access by io.netty.util.internal.ReflectionUtil (fil
 WARNING: Please consider reporting this to the maintainers of io.netty.util.internal.ReflectionUtil
 WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
 WARNING: All illegal access operations will be denied in a future release
-10:12:18.111 [NamespaceSystem-akka.actor.default-dispatcher-6] INFO akka.event.slf4j.Slf4jLogger - Slf4jLogger started
-10:12:18.585 [main] INFO com.firebase.server.forge.App$ - Listening at 127.0.0.1:9000
-10:12:23.533 [NamespaceSystem-akka.actor.default-dispatcher-6] INFO com.firebase.core.namespace.NamespaceActor - clone-218ce-default-rtdb successfully activated FBKV (SurveyIdle(0)) wait: 297ms, init: 0ms
-10:12:23.715 [NamespaceSystem-blocking-namespace-operation-dispatcher-8] INFO com.firebase.core.namespace.StateManager - Namespace clone-218ce-default-rtdb status Active to Active
+08:57:02.942 [NamespaceSystem-akka.actor.default-dispatcher-4] INFO akka.event.slf4j.Slf4jLogger - Slf4jLogger started
+08:57:03.248 [main] INFO com.firebase.server.forge.App$ - Listening at 127.0.0.1:9000
+08:57:07.730 [NamespaceSystem-akka.actor.default-dispatcher-4] INFO com.firebase.core.namespace.NamespaceActor - clone-218ce-default-rtdb successfully activated FBKV (SurveyIdle(0)) wait: 241ms, init: 0ms
+08:57:07.867 [NamespaceSystem-blocking-namespace-operation-dispatcher-7] INFO com.firebase.core.namespace.StateManager - Namespace clone-218ce-default-rtdb status Active to Active
+08:58:13.992 [Thread-0] INFO com.firebase.server.forge.App$ - Attempting graceful shutdown.
+08:58:14.028 [NamespaceSystem-akka.actor.default-dispatcher-5] INFO com.firebase.core.namespace.Terminator$Terminator - 1 actors left to terminate: clone-218ce-default-rtdb
+08:58:14.047 [NamespaceSystem-akka.actor.default-dispatcher-4] INFO com.firebase.core.namespace.NamespaceActor - stopped namespace actor for clone-218ce-default-rtdb
+08:58:14.070 [Thread-0] INFO com.firebase.server.forge.App$ - Graceful shutdown complete.
